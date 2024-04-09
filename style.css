@@ -1,0 +1,262 @@
+*{
+   margin: 0px;
+   padding: 0px;
+}
+
+body{
+ background: url(./couple.jpg) no-repeat;
+ background-position:right top ;
+ height:180px ;
+ background-size:cover ;
+ font-family: Verdana, sans-serif
+}
+
+nav{
+    height:800px ;
+    background-color:none;
+
+}
+header{
+ height: 100px;
+ background-color: rgba(74, 81, 95, 0.5);
+}
+
+.position{
+    width: 40% ;
+    height: 50px;
+   
+}
+
+li a{
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 10px  16px;
+  text-decoration: none;
+  position: relative;
+  margin: 0 10px;
+}
+
+li{
+    float: left;
+    list-style: none;
+}
+
+/*Navigation manu underline animation*/
+li a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(239, 241, 242);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in-out;
+}
+
+li a:hover:after{
+    transform-origin: bottom right;
+    transform: scaleX(1);
+}
+/*End of animation code*/
+.text-box{
+   width: 90%;
+   color: rgb(255, 255, 255);
+   position: 50%;
+   top: 50%;
+   left: 50%;
+   transform: translate (-50%,-50%);
+   text-align: center;
+   text-shadow: 0px 0px 35px rgb(74, 75, 74),0px 0px 35px rgb(74, 75, 74),
+                 0px 0px 35px rgb(74, 75, 74),0px 0px 35px rgb(74, 75, 74); 
+   
+}
+.text-box h1{
+    font-size: 60px;
+    font-family: 'Qwitcher Grypen', cursive;
+    
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:rgb(255, 255, 255);
+}
+.groom-text{
+    font-size: 50px;
+    font-family: 'Qwitcher Grypen', cursive;
+    text-align: center;
+    text-shadow: 0px 0px 35px rgb(74, 75, 74),0px 0px 35px rgb(74, 75, 74),
+                 0px 0px 35px rgb(74, 75, 74),0px 0px 35px rgb(74, 75, 74); 
+                
+}
+.bride-text{
+    font-size: 50px;
+    font-family: 'Qwitcher Grypen', cursive;
+    text-align: center;
+    text-shadow: 0px 0px 35px rgb(74, 75, 74),0px 0px 35px rgb(74, 75, 74),
+                 0px 0px 35px rgb(74, 75, 74),0px 0px 35px rgb(74, 75, 74); 
+}
+.submit-btn{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.submit-btn:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.location-btn{
+    background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.location-btn:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.photos-panel {
+    /* border: 1px solid black; */
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+}
+
+.photos-panel img {
+    width: 30%;
+    border-radius: 20px;
+    margin: 1.5%;
+    height: fit-content;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0);
+    /* box-sizing: border-box; */
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+}
+
+/* 9,10 16 */
+img:hover {
+    border-radius: 0px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.500);
+
+}
+
+img:active {
+    transform: scale(1.5);
+}
+
+footer {
+    background-color: black;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 5px auto;
+    width: 50%;
+    position: static;
+
+
+
+}
+
+nav a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start; */
+    padding: 0.5em 1em;
+    transition: all 0.2s ease-in-out;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: 600;
+    transform: translatey(-2px);
+
+}
+
+nav a:active {
+    transform: scale(0.9);
+}
+
+@media (max-width:700px) {
+    .photos-panel {
+        flex-direction: row;
+        align-items: center;
+        width: 95%;
+    }
+
+    .photos-panel img {
+        width: 40%;
+        margin: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .photos-panel {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .photos-panel img {
+        width: 90%;
+        margin: 0 0 20px 0;
+    }
+
+    section.photos-panel img:first-child {
+        margin-top: 20px;
+    }
+
+
+}
+#gallerybody{
+    background: black;
+    background-position:right top ;
+    height:180px ;
+    background-size:cover ;
+    font-family: Verdana, sans-serif    
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+
+
+}
+#title{
+    font-size: 80px;
+    font-family: 'Qwitcher Grypen', cursive;
+    color: rgb(255, 255, 255); 
+    text-align: center;
+}
